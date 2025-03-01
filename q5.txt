@@ -1,25 +1,14 @@
 void sortOddEven(List<int> arr) {
- 
   List<int> oddNumbers = arr.where((x) => x.isOdd).toList();
   List<int> evenNumbers = arr.where((x) => x.isEven).toList();
-
-  
   oddNumbers.sort();
-  
-  
   evenNumbers.sort((a, b) => b.compareTo(a));
-
-  
   List<int> sortedArray = [...oddNumbers, ...evenNumbers];
-
-  
   print(sortedArray.join(' '));
 }
-
 void main() {
   List<int> arr1 = [5, 8, 11, 6, 2, 1, 7];
   sortOddEven(arr1); 
-
   List<int> arr2 = [9, 4, 3, 10, 15, 2];
   sortOddEven(arr2); 
 }
