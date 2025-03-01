@@ -1,5 +1,4 @@
 import 'dart:collection';
-
 List<List<int>> permuteUnique(List<int> nums) {
   nums.sort(); 
   List<List<int>> result = [];
@@ -11,12 +10,10 @@ List<List<int>> permuteUnique(List<int> nums) {
       result.add(List.from(tempList)); 
       return;
     }
-
     for (int i = 0; i < nums.length; i++) {
       if (used[i] || (i > 0 && nums[i] == nums[i - 1] && !used[i - 1])) {
         continue; 
       }
-
       used[i] = true;
       tempList.add(nums[i]);
       backtrack();
@@ -24,15 +21,12 @@ List<List<int>> permuteUnique(List<int> nums) {
       tempList.removeLast();
     }
   }
-
   backtrack();
   return result;
 }
-
 void main() {
   List<int> nums1 = [1, 1, 2];
   print("Input: $nums1 => Output: ${permuteUnique(nums1)}");
-
   List<int> nums2 = [1, 2, 3];
   print("Input: $nums2 => Output: ${permuteUnique(nums2)}");
 }
