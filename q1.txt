@@ -17,7 +17,7 @@ bool isSubsetSum(List<int> arr, int n, int targetSum) {
 }
 void main() {
   List<int> arr = [3, 34, 4, 12, 5, 2];
-  int targetSum1 = 10;
+  int targetSum1 = 9;
   print("Subset with sum $targetSum1 exists: ${isSubsetSum(arr, arr.length, targetSum1)}");
   int targetSum2 = 30;
   print("Subset with sum $targetSum2 exists: ${isSubsetSum(arr, arr.length, targetSum2)}");
@@ -27,7 +27,7 @@ void main() {
 
 Output:
 
-Subset with sum 10 exists: true
+Subset with sum 9 exists: true
 Subset with sum 30 exists: false
 
 
