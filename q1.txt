@@ -21,6 +21,8 @@ void main() {
   print("Subset with sum $targetSum1 exists: ${isSubsetSum(arr, arr.length, targetSum1)}");
   int targetSum2 = 30;
   print("Subset with sum $targetSum2 exists: ${isSubsetSum(arr, arr.length, targetSum2)}");
+   int targetSum3 = 60;
+  print("Subset with sum $targetSum3 exists: ${isSubsetSum(arr, arr.length, targetSum3)}");
 }
  
 
@@ -29,5 +31,6 @@ Output:
 
 Subset with sum 9 exists: true
 Subset with sum 30 exists: false
+Subset with sum 60 exists: true
 
 
