@@ -15,6 +15,8 @@ void main() {
   print("Input: $input1 => Output: ${decodeString(input1)}");
   String input2 = "b3c6d15";
   print("Input: $input2 => Output: ${decodeString(input2)}");
+  String input3 = "e5f6g15";
+  print("Input3: $input3 => Output: ${decodeString(input3)}");
 }
 
 
@@ -23,6 +25,7 @@ Output:
 
 Input: a1b10 => Output: abbbbbbbbbb
 Input: b3c6d15 => Output: bbbccccccddddddddddddddd
+Input3: e5f6g15 => Output: eeeeeffffffggggggggggggggg
 
 
 
