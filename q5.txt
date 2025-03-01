@@ -11,6 +11,8 @@ void main() {
   sortOddEven(arr1); 
   List<int> arr2 = [9, 4, 3, 10, 15, 2];
   sortOddEven(arr2); 
+   List<int> arr3 = [10, 30, 20, 50, 40];
+  sortOddEven(arr3); 
 }
 
 
@@ -19,6 +21,7 @@ Output:
 
 1 5 7 11 8 6 2
 3 9 15 10 4 2
+50 40 30 20 10
 
 
 
