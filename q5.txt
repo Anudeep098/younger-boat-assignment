@@ -33,28 +33,3 @@ Output:
 
 
 
-Question:
-
-Problem Statement: Sort Array with Odd in Ascending and Even in
-Descending Order
-Given an array of integers, sort the odd numbers in ascending order and the
-even numbers in descending order, while maintaining their relative positions in
-separate groups.
-Input:
-An integer array arr[] of size N (1 ≤ N ≤ 10⁵) where each element arr[i] (−10⁶ ≤
-arr[i] ≤ 10⁶).
-Output:
-Print the modified array where:
-Odd numbers appear first in ascending order.
-Even numbers appear next in descending order.
-Example 1:
-Input:
-Copy
-Edit
-arr[] = {5, 8, 11, 6, 2, 1, 7}
-Output:1 5 7 11 8 6 2
-Explanation:
-Odd numbers {5, 11, 1, 7} → Sorted as {1, 5, 7, 11}
-Even numbers {8, 6, 2} → Sorted as {8, 6, 2}
-Example 2:
-Input: arr[] = {9, 4, 3, 10, 15, 2}
