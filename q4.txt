@@ -1,28 +1,21 @@
 int longestSubarrayWithSumAtMostK(List<int> arr, int k) {
   int left = 0, right = 0, sum = 0, maxLength = 0;
-
   while (right < arr.length) {
     sum += arr[right];
-
     while (sum > k) {
       sum -= arr[left];
       left++;
     }
-
     maxLength = (right - left + 1).clamp(maxLength, arr.length);
     right++;
   }
-
   return maxLength;
 }
-
 void main() {
   List<int> arr = [3, 1, 2, 1, 4, 5];
   int k = 7;
   print("Longest subarray length with sum ≤ $k: ${longestSubarrayWithSumAtMostK(arr, k)}");
 }
-
-
 
 
 Output:
