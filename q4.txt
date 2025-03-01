@@ -31,23 +31,3 @@ Longest subarray length with sum ≤ 7: 4
 
 
 
-Question:
-
-Problem Statement:
-Longest Subarray with Sum ≤ K
-Given an array arr[] of size N containing positive integers and an integer K, find
-the length of the longest contiguous subarray whose sum is less than or equal
-to K.
-Input:
-An integer N (1 ≤ N ≤ 10⁵), the size of the array.
-An integer array arr[] of size N, containing positive numbers.
-An integer K (1 ≤ K ≤ 10⁹), the target sum.
-Output:
-Return an integer representing the length of the longest subarray whose sum
-is ≤ K.
-Example 1:
-arr[] = {3, 1, 2, 1, 4, 5}
-K = 7
-Output:4
-Explanation:
-The longest subarray with sum ≤ 7 is {3, 1, 2, 1}, which has length 4.
